@@ -5,5 +5,5 @@ function whosPaying() {
         number = Math.floor(number) + 1
         return names[number]  
     }
-
+    
  whosPaying()
