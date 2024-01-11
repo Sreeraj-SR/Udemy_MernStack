@@ -1,0 +1,17 @@
+{
+  "name": "learning-node",
+  "version": "1.0.0",
+  "description": "I am currently learning node",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sreeraj Binu Sukumaran",
+  "license": "ISC",
+  "dependencies": {
+    "superhero": "^2.13.7",
+    "superheroes": "^3.0.0",
+    "superheros": "^1.0.0"
+  }
+}
