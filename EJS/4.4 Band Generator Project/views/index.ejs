@@ -1,0 +1,15 @@
+<!-- addin header  -->
+<%- include("partials/header.ejs") %>
+
+  <% if(locals.nameOfBand) { %> 
+    <h1><%= nameOfBand %> </h1>
+  <% } else { %> 
+    <h1> Click the Below Button to Generate Band Name</h1>
+  <% } %>
+
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<!-- adding footer  -->
+<%- include("partials/footer.ejs") %>

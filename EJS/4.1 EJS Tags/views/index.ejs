@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS Tags</title>
+</head>
+
+<body>
+  <h1>
+    <!-- Tite goes here -->
+    <%= object.title %>
+  </h1>
+  <p>Current second:
+    <!-- Current second goes here -->
+    <%= object.seconds %>
+  </p>
+  <% if (object.seconds %2 === 0) { %> 
+    <ul>
+      <% object.items.forEach((fruit) => { %>
+        <li>
+          <%= fruit %>
+        </li>
+      <% }) %>
+
+    </ul>  
+  <% } else { %>
+    <p>
+      No items to display
+    </p>
+  <% } %>  
+  <p>
+    <!-- HTML content goes here -->
+    <%- object.htmlContent %>
+  </p>
+ <%- include("footer.ejs") %>
+  <!-- Footer goes here -->
+</body>
+
+</html>
