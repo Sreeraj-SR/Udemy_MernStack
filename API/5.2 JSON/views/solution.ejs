@@ -18,12 +18,9 @@
   </form>
   <div id="recipeContainer" class="hidden">
     <%if (locals.recipe) {%>
-
-      <h2 id="recipeTitle">
-        <%= recipe.name %>
-      </h2>
-
+      <h2 id="recipeTitle"> <%= recipe.name %> </h2>
       <h3>Ingredients:</h3>
+
       <ul id="ingredientsList">
         <li>
           <%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %>
@@ -36,12 +33,12 @@
           <li>
             <%= topping.quantity %> of <%= topping.name %>
           </li>
-          <% }) %>
+        <% }) %>
       </ul>
 
       <%} else {%>
         <h2>Pick your favourite taco ingredient 👆</h2>
-        <%}%>
+        <% } %>
   </div>
 </body>
 
